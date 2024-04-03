@@ -538,6 +538,30 @@ font-weight: 700;
   bottom: .5rem;
   right: 1rem;
 }
+.catalogBanner__bg{
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./img/catalog-banner.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* to center the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.catalogBanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+.catalogBanner p{
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
   /* REPEATABLE  */
     .btn{
       background-color: transparent;
