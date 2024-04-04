@@ -388,6 +388,26 @@ catalogSection{
 
   }
 }
+.interiorDesign__wrapper h1{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+  padding: 3rem;
+}
+.interiorDesign__right p{
+  color: var(--clr-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.interiorDesign__left{
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding: 3rem 0;
+}
+
+
 /*  ABOUT PAGE BANNER MOBILE */
 @media screen and (max-width: 520px ){
   .aboutBanner__left{
@@ -445,7 +465,48 @@ catalogSection{
   font-weight: 500;
   text-align: justify;
 }
+  /* UPDATE SECTION */
+  .package_wrapper h2 {
+    color: var(--clr-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem;
+  }
+  .package_theme {
+    padding: 5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
   
+  .package_left {
+    width: 500rem;
+    margin-left: 20rem;
+    margin-top: 5rem;
+  }
+  
+  .package_left img {
+    width: 70rem;
+  }
+  .package_right h2 {
+    color: var(--clr-primary);
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 6rem;
+    height: -20px;
+  }
+  .package_right p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+  .package_theme:nth-child(odd) {
+    background-color: var(--clr-semilight);
+    flex-direction: row-reverse;
+    display: flex;
+  }
 
 /* CALL TO ACTION */
 .cta{
