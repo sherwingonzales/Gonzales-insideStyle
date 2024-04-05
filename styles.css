@@ -333,13 +333,15 @@ width: 10rem;
   }
 }
 /* CATALOG SECTION */
-catalogSection{
+.catalogSection{
   padding: 3rem 0;
 }
 .catalogSection__wrapper{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   gap: 5rem;
+  max-width: 800px;
+  
 }
 .catalogSection h2{
   color: var(--clr-primary);
@@ -473,10 +475,15 @@ catalogSection{
     text-align: center;
     padding: 3rem;
   }
+
+  .package__wrapper {}
   .package_theme {
     padding: 5rem;
     display: flex;
     gap: 0.5rem;
+    max-width: 1500px;
+    /* justify-content: center; */
+    width: 100%;
   }
   
   .package_left {
@@ -507,7 +514,70 @@ catalogSection{
     flex-direction: row-reverse;
     display: flex;
   }
+/* CONTACTS */
 
+.contactPage {
+  padding: 50px 0;
+}
+
+.contactPage h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.contactPage h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+.contacPage_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.contact__form input,
+.contact__form textarea {
+  border: none;
+  background-color: var(transparent);
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding: 10px 16px;
+}
+
+.contact__form button {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1rem;
+}
+.contact__info {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 40px;
+}
+
+.contact__info ul li {`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact__info ul li a {
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 520px) {
+  .contactPage {
+    flex-direction: column;
+  }
+}
 /* CALL TO ACTION */
 .cta{
   padding: 3rem 0;
@@ -622,6 +692,142 @@ font-weight: 700;
 .catalogBanner p{
   font-size: 3rem;
   line-height: 2.5rem;
+}
+.contacts{
+  padding: 50px 0;
+
+}
+.contacts h2{
+font-size: 30px;
+margin-bottom: 20px;
+}
+.contacts__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-gap: 2rem;
+}
+.contacts__form input,
+  .contacts__form textarea{
+    border: none;
+    background-color:var(transparent);
+    width: 100%;
+    border-bottom: 1px solid gray ;
+    padding: 10px 16px;
+  
+}
+/* UPDATE SECTION */
+
+.updateSection h1 {
+  color: var(--clr-primary);
+  text-align: center;
+  font-size: 7rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.updateBanner {
+  padding: 50px 0;
+}
+
+.updateBanner_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.updateSection {
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100;
+}
+
+@media (max-width: 520px) {
+  .updateBanner_wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+}
+
+/* updates section 2 */
+.updateSection2 {
+  padding: 50px 0;
+}
+.updateSection2 h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: var(--clr-secondary);
+  font-weight: 800;
+}
+
+.updateSection2_wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 50px;
+}
+.update_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.update_cards .card {
+  padding: 30px;
+  background-color: var(--clr-semilight);
+}
+.update_cards .card a {
+  font-size: 4rem;
+  color: var(--clr-dark);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.update_cards .card h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--clr-dark);
+}
+.update_right ul li {
+  margin-bottom: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* updates section 3 */
+
+.updateSection3 h2 {
+  color: var(--clr-primary);
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+.updateSection3 {
+  padding: 10px;
+}
+
+.updateSection3_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.updateSection3_wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}
+.updateSection3_wrapper {
+  width: 100;
+}
+.updateSection3_wrapper ul li a {
+  color: var(--clr-dark);
+}
+.updateSection3_wrapper img {
+  width: 100%;
+  margin-bottom: 10px;
 }
   /* REPEATABLE  */
     .btn{
