@@ -476,7 +476,7 @@ width: 10rem;
     padding: 3rem;
   }
 
-  .package__wrapper {}
+  .package__wrapper {
   .package_theme {
     padding: 5rem;
     display: flex;
@@ -485,7 +485,7 @@ width: 10rem;
     /* justify-content: center; */
     width: 100%;
   }
-  
+}
   .package_left {
     width: 500rem;
     margin-left: 20rem;
@@ -561,7 +561,7 @@ width: 10rem;
   padding: 40px;
 }
 
-.contact__info ul li {`
+.contact__info ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
