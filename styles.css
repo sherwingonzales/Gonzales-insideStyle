@@ -494,6 +494,7 @@ width: 10rem;
   
   .package_left img {
     width: 70rem;
+    
   }
   .package_right h2 {
     color: var(--clr-primary);
@@ -518,6 +519,7 @@ width: 10rem;
 
 .contactPage {
   padding: 50px 0;
+  margin-bottom: 29rem;
 }
 
 .contactPage h2 {
